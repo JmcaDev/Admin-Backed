@@ -6,7 +6,11 @@
         "strict": false,
         "sourceMap": true,
         "esModuleInterop": true,
-        "declaration": true
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext"
     },
     "include": ["src/**/*.ts"]
 }
