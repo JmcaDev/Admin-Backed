@@ -1,5 +1,4 @@
-import request from "supertest"
-import server, { connectDB} from "../server"
+import { connectDB } from "../server"
 import db from "../config/db"
 
 
