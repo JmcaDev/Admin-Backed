@@ -7,6 +7,9 @@ import colors from "colors"
 export const getProducts = async (req: Request, res: Response) => {
     const products = await Product.findAll({
         where: {visible : true},
+        order: [
+            ["id", "DESC"]
+        ],
         attributes: {exclude: ["createdAt", "updatedAt"]}
     })
     res.json({data: products})
